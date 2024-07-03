@@ -1,0 +1,192 @@
+/* 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	background-color: #e6485c;
+	padding: 10px;
+}
+
+#top-menu {
+	display: flex;
+	flex-direction: row;
+}
+
+#top-menu li {
+	list-style: none;
+	margin: 0 10px;
+}
+
+#breadcumb {
+	padding: 10px 20px;
+	background-color: ghostwhite;
+}
+
+main {
+	padding: 10px 20px;
+	flex: 1;
+}
+
+#footer {
+	display: flex;
+	justify-content: center;
+	background-color: #e6485c;
+	padding: 10px;
+} */
+
+:root {
+    --main-color: #e12b57;
+    --btn-color: #48ec86;
+    --btn-hover: #38c16d;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+        background-image: url('../pattern-randomized.svg') !important;
+}
+
+a, .author-name, .published{
+    color: var(--main-color) !important;
+}
+.ast-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#product-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+@media screen and (max-width: 480px) {
+    #product-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#hero-banner {
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+#hero-banner img {
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any inline spacing */
+}
+
+.ast-grid-common-col {
+    list-style: none;
+}
+
+.products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+}
+
+.products li {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color */
+    border: 1px solid #ddd; /* Example border */
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.astra-shop-thumbnail-wrap {
+    text-align: center;
+}
+
+.astra-shop-summary-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.woocommerce-loop-product__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    margin-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: var(--btn-color) !important; /* Example button color */
+    color: black !important;
+    border-radius: 10px !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Example hover color */
+}
+
+.add_to_cart_button {
+    background-color: var(--btn-color)!important;
+    color: black!important;
+}
+
+.add_to_cart_button:hover{
+    background-color: var(--btn-hover)!important;
+    color: white!important;
+}
+
+.about-us{
+    background-color: #ffffff;
+    height: max-content;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.about-us p{
+    padding: 2em 0;
+}
+
+.ast-onsale-card{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.site-footer {
+    background-color: #09b5ff !important;
+    background-image: url('../pattern-randomized.svg') !important;
+}
